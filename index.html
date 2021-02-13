@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>jm-test</title>
+</head>
+<body>
+    <main class="main">
+        <div class="main__item logo">
+            <img src="img/bg.jpg" alt="bg image" class="logo__bg">
+        </div>
+        <div class="main__item sign">
+        <form action="">
+            <div class="sign__register register">
+                <h1 class="register__header">Get iintoo it today</h1>
+                <h3 class="register__subheader">There is no charge or obligation upon registration.</h3>
+                <div class="register__social social">
+                    <button type="button" class="social__facebook register-button">Register with Facebook</button>
+                    <button type="button" class="social__linkedin register-button">Register with LinkedIn</button>
+                </div>
+                <div class="or-line">OR</div>
+                <div class="register__contact contact">
+                        <input type="email" value="gus.goodwin@gmail.com" class="contact__email contact__input">
+                        <input type="tel" class="contact__tel contact__input">
+                </div>
+            </div>
+            <div class="sign__invest invest">
+                <h2 class="invest__header">What type of investor are you?</h2>
+                <h4 class="invest__subheader">Select the type of investor you are below.</h4>
+                <div class="invest__chose choose">
+                    <!--...-->
+                    <label class="choose__item">
+                        <input class="choose__item1 choose__input" type="radio" name="investor" value="Individual" checked>
+                        <span class="choose__checked"></span>
+                        Individual
+                        <a href="#">
+                            <img src="img/info-icon.png" alt="more information link about Individual choose" class="choose__info">
+                        </a>
+                        <div class="choose__item5 choose__item1-text">
+                        I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.
+                        </div>
+                    </label>
+                    <label class="choose__item">
+                        <input class="choose__item2 choose__input" type="radio" name="investor" value="Business">
+                        <span class="choose__checked"></span>
+                        Business
+                        <a href="#">
+                            <img src="img/info-icon.png" alt="more information link about Individual choose" class="choose__info">
+                        </a>
+                        <div class="choose__item5 choose__item2-text"></div>
+                    </label>
+                    <label class="choose__item">
+                        <input class="choose__item3 choose__input" type="radio" name="investor" value="IRA">
+                        <span class="choose__checked"></span>
+                        IRA
+                        <a href="#">
+                            <img src="img/info-icon.png" alt="more information link about Individual choose" class="choose__info">
+                        </a>
+                        <div class="choose__item5 choose__item3-text"></div>
+                    </label>
+                    <label class="choose__item">
+                        <input class="choose__item4 choose__input" type="radio" id="Trust" name="investor" value="Trust">
+                        <span class="choose__checked"></span>
+                        Trust
+                        <a href="#">
+                            <img src="img/info-icon.png" alt="more information link about Individual choose" class="choose__info">
+                        </a>
+                        <div class="choose__item5 choose__item4-text"></div>
+                    </label>
+                </div>
+            <div class="sign__agreement checkbox">
+                <input type="checkbox" id="agrement" class="checkbox__check">
+                <label for="agrement" class="checkbox__text">
+                    I agree to the terms and receiving notifications from iintoo
+                    <a href="/" class="checkbox__link">View full terms</a>
+                </label>
+            </div>
+            <div class="sign__submit">
+                <button class="submit-button">Create Account</button>
+            </div>
+        </form>
+        </div>
+    </main>
+</body>
+</html>

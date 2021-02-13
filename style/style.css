@@ -1,0 +1,298 @@
+@font-face {
+    font-family: Barlow;
+    src: url(../font/Barlow-Black.otf), url(../font/Barlow-Bold.otf), url(../font/Barlow-BlackItalic.otf);
+
+}
+
+body {
+    padding: 100px 80px;
+    background-color: #EFF6FF;
+    color: #2A4A5C;
+}
+
+input:active, input:hover, input:focus {
+    outline: none;
+}
+
+.main {
+    display: flex;
+}
+
+.main__item {
+    
+}
+
+.logo::before {
+    content: "";
+    background: url(../img/logo.svg) no-repeat 0 0;
+    position: absolute;
+    display:inline-block;
+    height:32px;
+    width:140px;
+    margin: 45px;
+    background-size: 140px 32px;
+}
+
+.sign {
+    padding: 110px 70px;
+    background-color: #ffffff;
+}
+
+.register__header {
+    margin: 0;
+
+    font-size: 22px;
+}
+
+.register__subheader {
+    margin: 25px 0 0;
+
+    font-size: 16px;
+}
+
+.invest__header {
+    margin: 60px 0 0;
+    font-size:  16px;
+}
+
+.invest__subheader {
+    margin: 16px 0 0;
+    font-size: 12px;
+}
+
+.register__social, .social, .contact {
+    display: flex;
+    gap: 30px;
+    margin: 50px 0 0;
+}
+
+.register-button {
+    padding: 15px 50px;
+
+    min-width: 240px;
+    
+    border: 0;
+    font-size: 12px;
+    color: white;
+}
+
+.social__facebook {
+    background-color: #255A9B;
+    background-image: url(../img/facebook.svg);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: 10px;
+}
+
+.social__linkedin {
+    background-color: #0076B6;
+    background-image: url(../img/linkedin.svg);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: 10px;
+}
+
+.social__facebook:hover,
+.social__linkedin:hover,
+.social__facebook:focus,
+.social__linkedin:focus {
+    border: 2px solid #3698FB;
+}
+
+.or-line {
+    overflow: hidden;
+    text-align: center;
+
+    margin-top: 50px;
+}
+
+.or-line::before,
+.or-line::after {
+  background-color: #AFAFAF;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 30%;
+}
+
+.or-line::before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.or-line::after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.contact__input {
+    padding: 30px 10px 10px;
+
+    width: 217px;
+
+    border: 1px solid #AFAFAF;
+}
+
+.contact::before {
+    content: "Email";
+    color: #AFAFAF;
+    position: absolute;
+    padding: 8px 0 0 10px;
+}
+
+.contact::after {
+    content: "Phone";
+    color: #AFAFAF;
+    position: absolute;
+    margin-left: 270px;
+    padding: 8px 0 0 10px;
+}
+
+.contact__email,
+.contact__email:focus,
+.contact__email:hover, 
+.contact__tel:focus,
+.contact__tel:hover {
+    border-left: 2px solid #3698FB;
+} 
+
+.invest__chose {
+    margin: 60px 0 0; 
+}
+
+.choose__item {
+    margin-right: 30px;
+
+    color: black;
+}
+
+.choose__item5 {
+    position: absolute;
+    padding: 15px 12px;
+    margin-top: 24px;
+
+    max-width: 260px;
+    min-width: 240px;
+
+    border-radius: 5px;
+    background-color: #ffffff;
+    
+    font-size: 12px;
+    color: #AFAFAF;
+    display: none;
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.choose__item1:checked ~ .choose__item1-text{
+    display: block;
+}
+
+.choose__item2:checked ~ .choose__item2-text{
+    display: block;
+}
+
+.choose__item3:checked ~ .choose__item3-text{
+    display: block;
+}
+
+.choose__item4:checked ~ .choose__item4-text{
+    display: block;
+}
+
+.choose__input {
+	appearance: none;
+    margin-left: 22px;
+}
+
+.choose__checked {
+	position: absolute;
+    box-sizing: border-box;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #AFAFAF;
+    border-radius: 50%;
+    
+    margin-left: -30px;
+}
+
+.choose__input:checked + .choose__checked {
+	border: 4px solid #3698FB;
+}
+
+.choose__info {
+    width: 12px;
+    height: 12px;
+
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
+.sign__agreement {
+    margin-top: 140px;
+}
+
+.checkbox__text {
+    font-size: 12px;
+    color: #AFAFAF;
+}
+
+.checkbox__link {
+    color: #3698FB;
+}
+
+.submit-button {
+    padding: 16px 70px;
+    margin: 60px 0 0;
+    background-color: #3698FB;
+    border: 0;
+    border-radius: 5px;
+
+    color: #ffffff;
+
+    text-decoration: solid;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    .main {
+        flex-direction: column;
+    }
+    .or-line {
+        margin-left: -110px;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    .main {
+        flex-direction: column;
+    }
+    .logo__bg {
+        max-width: 320px;
+    }
+    .logo::before {
+        height: 32px;
+        width: 140px;
+        margin: 16px;
+        background-size: 90px 32px;
+    }
+    .register__social, .social, .contact {
+        flex-direction: column;
+    }
+    .contact::after {
+        margin-left: 0;
+        margin-top: 86px;
+    }
+    .sign {
+        padding: 50px 16px;
+    }
+}
